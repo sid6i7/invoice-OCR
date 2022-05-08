@@ -1,4 +1,3 @@
-# INDUSTRY-PROJECT #1
 # OCR using pytessaract and OpenCV
 
 import re
@@ -8,9 +7,9 @@ from pdf2image import convert_from_path
 import streamlit as st
 import pytesseract
 import os
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\Tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = 'add path to Tesseract.exe'
 
-st.image("bill.png",width=250)
+# st.image("bill.png",width=250)
 st.title("WHAT'S THE BILL AMOUNT?")
 
 
@@ -26,7 +25,7 @@ if uploaded_pdf is not None:
    st.write("file upload successful")
 
 if uploaded_pdf is not None:
-    pages = convert_from_path("tempDir\{}".format(uploaded_pdf.name), 500, poppler_path=r"C:\Program Files\poppler-0.68.0\bin")
+    pages = convert_from_path("tempDir\{}".format(uploaded_pdf.name), 500, poppler_path="add path to poppler\bin")
 
     i = 1
     for page in pages:
