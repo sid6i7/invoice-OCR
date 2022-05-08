@@ -1,9 +1,9 @@
-# invoice-OCR
+# Invoice-OCR
 OCR project that can fetch bill amount from a PDF invoice
 
-# Dependencies:
-- pytesseract
-- poppler
-- opencv
-- pdf2image
-- streamlit
+## Dependencies:
+- Pytesseract
+- Poppler
+- Opencv
+- Pdf2image
+- Streamlit
