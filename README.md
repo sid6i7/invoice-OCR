@@ -43,10 +43,12 @@ streamlit run .\OCR_streamlit.py
 
 Following window will open up:
 <br>
+<br>
 ![image](https://user-images.githubusercontent.com/92942861/167298480-5a674664-eb0d-480f-aa5a-3a59ce076926.png)
 <br>
 <br>
 Now, simply upload an invoice PDF and it will return the bill amount
-
+<br>
+<br>
 ![image](https://user-images.githubusercontent.com/92942861/167298732-f5cfefab-3a95-410f-bf8d-90da5f143834.png)
 
