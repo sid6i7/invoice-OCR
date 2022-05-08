@@ -9,7 +9,7 @@ import pytesseract
 import os
 pytesseract.pytesseract.tesseract_cmd = 'add path to Tesseract.exe'
 
-st.image("bill.png",width=250)
+# st.image("bill.png",width=250)
 st.title("WHAT'S THE BILL AMOUNT?")
 
 
