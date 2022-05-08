@@ -7,7 +7,10 @@ from pdf2image import convert_from_path
 import streamlit as st
 import pytesseract
 import os
-pytesseract.pytesseract.tesseract_cmd = 'add path to Tesseract.exe'
+
+pyts_path = "path_to_pytesseract.exe"
+poppler_path = "path_to_poppler_bin_folder"
+pytesseract.pytesseract.tesseract_cmd = pyts_path
 
 # st.image("bill.png",width=250)
 st.title("WHAT'S THE BILL AMOUNT?")
@@ -25,7 +28,7 @@ if uploaded_pdf is not None:
    st.write("file upload successful")
 
 if uploaded_pdf is not None:
-    pages = convert_from_path("tempDir\{}".format(uploaded_pdf.name), 500, poppler_path="add path to poppler\bin")
+    pages = convert_from_path("tempDir\{}".format(uploaded_pdf.name), 500, poppler_path=poppler_path)
 
     i = 1
     for page in pages:
