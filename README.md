@@ -9,6 +9,7 @@ pip install streamlit, pytesseract, pdf2image, opencv-python
 
 Other than these, you also required some pytesseract files and poppler files:
 
+
 ### For Pytesseract
 Install it from here: https://github.com/UB-Mannheim/tesseract/wiki
 
@@ -18,6 +19,7 @@ For example, it was this for me:
 ```python
 pyts_path = "C:\Program Files\Tesseract-OCR\Tesseract.exe"
 ```
+
 
 ### For Poppler
 Download it from here: https://blog.alivate.com.au/poppler-windows/
